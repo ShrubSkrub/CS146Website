@@ -2,16 +2,22 @@
     {
         "name": "O'Begal",
         "address": "600 Washington St, Hoboken, NJ 07030",
-        "categories": "Bagel"
+        "categories": [
+            "Bagel"
+        ]
     },
     {
         "name": "Jefferson’s Coffee",
         "address": "534 Washington St, Hoboken, NJ 07030",
-        "categories": "Coffee"
+        "categories": [
+            "Coffee"
+        ]
     },
     {
         "name": "Ayame Hibachi & Sushi",
         "address": "526 Washington St, Hoboken, NJ 07030",
-        "categories": "Sushi"
+        "categories": [
+            "Sushi", "Takeout"
+        ]
     }
 ]
