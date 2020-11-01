@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Washington Street Restaurant Finder</title>
+        <link rel="stylesheet" href="/css/sitestyle.css">
+        <title>Washington Street Restaurant Finder</title>
     </head>
     <body>
+        <!-- 
         <div class="main">
-        <h1>Washington Street Restaurant Finder</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.427648814818!2d-74.02893911553053!3d40.743209465352784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259df6d2f8745%3A0xb41f87a57efcadc5!2sWashington%20St%2C%20Hoboken%2C%20NJ%2007030!5e0!3m2!1sen!2sus!4v1603149840590!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <p>Description of website goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus gravida eros et vestibulum. In fermentum dignissim nisi a gravida. Integer convallis in mauris vitae semper. Phasellus efficitur, massa sit amet commodo efficitur, tellus arcu tristique nunc, ac semper lorem erat eu mauris. Suspendisse at erat ut ipsum lobortis efficitur at feugiat magna. Cras blandit orci in luctus vehicula. Morbi elit nisl, porta vitae bibendum in, consectetur non risus. Duis congue iaculis sem, vel fermentum mauris gravida eu. Nunc cursus nisl lectus, et maximus diam blandit ac. </p>
-        <p>Contact information: blah blah blah blah blah</p>
+            <h1>Washington Street Restaurant Finder</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.427648814818!2d-74.02893911553053!3d40.743209465352784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259df6d2f8745%3A0xb41f87a57efcadc5!2sWashington%20St%2C%20Hoboken%2C%20NJ%2007030!5e0!3m2!1sen!2sus!4v1603149840590!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            
+            </iframe>
+            <p>
+                Description of website goes here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus gravida eros et vestibulum. In fermentum dignissim nisi a gravida. Integer convallis in mauris vitae semper. Phasellus efficitur, massa sit amet commodo efficitur, tellus arcu tristique nunc, ac semper lorem erat eu mauris. Suspendisse at erat ut ipsum lobortis efficitur at feugiat magna. Cras blandit orci in luctus vehicula. Morbi elit nisl, porta vitae bibendum in, consectetur non risus. Duis congue iaculis sem, vel fermentum mauris gravida eu. Nunc cursus nisl lectus, et maximus diam blandit ac. 
+            </p>
+            <p>Contact information: blah blah blah blah blah</p>
+        </div>!-->
+
+        <div class="main">
+            <h1 id="mainTitle">Washington Street Restaurant Finder</h1>
         </div>
 
-        <div class="sidebar">
-            <form>
-                <label for="search">Search:</label><br>
-                <input type="text">
-            </form>
-            <ul>
-                <li><a href="howitworks.html">How it works</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="restaurant.html">Restaurants</a></li>
-                <li><a href="/index.html">Home</a></li>
+        <div class="sidebar" id="nav">
+            <div id="logo"></div>
+            <ul id="navList">
+                <li class="navElm">
+                    <a class="navText">How it works</a>
+                </li>
+                <li class="navElm">
+                    <a class="navText">About</a>
+                </li>
+                <li class="navElm" onclick="location.href='restaurant.html'">
+                    <a class="navText">Restaurants</a>
+                </li>
+                <li class="navElm">
+                    <a class="navText">Home</a>
+                </li>
                 <!--- Temporary links below --->
-                <li><a href="/search.html">Search</a></li>
-                <li><a href="/searchresults.html">Search Results</a></li>
+                <li class="navElm">
+                    <a class="navText">Search</a>
+                </li>
+                <li class="navElm">
+                    <a class="navText">Search Results</a>
+                </li>
             </ul>
         </div>
     </body>
