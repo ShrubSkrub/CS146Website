@@ -3,16 +3,21 @@
     <head>
         <link rel="stylesheet" href="/css/sitestyle.css">
     </head>
-    <body>
+    <body onload="loadAllRestaurants()">
+        <script src="/js/script.js"></script>
         <div class="main">
             <h1 id="mainTitle">Washington Street Restaurant Finder</h1>
-            <table>
-                Placeholder for when we implement java script. This will be a list of all Restaurants
-            </table>
+            <div id="table">
+                <table id = "SearchResults">
+                    
+                </table>
+            </div>
         </div>
 
         <div class="sidebar" id="nav">
-            <div id="logo"></div>
+            <div id="logo">
+                <img src="/includes/logo.png" alt="logo" class="logo">
+            </div>
             <ul id="navList">
                 <li class="navElm" onclick="location.href='index.html'">
                     <a class="navText">Home</a>
