@@ -34,6 +34,9 @@ html {
 	box-shadow: 2px 0px 10px rgb(0,0,0);
 	width: 200px;
 }
+td {
+	padding: 20px;
+}
 #logo {
 	width: 150px;
 	height: 150px;
