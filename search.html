@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Washington Street Restaurant Finder</title>
+        <link rel="stylesheet" href="/css/sitestyle.css">
+
     </head>
+
     <body>
+        <div class="main">
+            <p>Needs javascript to implement Searching and displaying Restaurant</p>
+            <div id="Search">
+                <input type="text" id="SearchBar">
+                <button id="SearchButton">Search</button>
+            </div>
+        </div>
+
+        <div class="sidebar" id="nav">
+            <div id="logo"></div>
+            <ul id="navList">
+                <li class="navElm" onclick="location.href='index.html'">
+                    <a class="navText">Home</a>
+                </li>
+                <li class="navElm" onclick="location.href='restaurant.html'">
+                    <a class="navText">Restaurants</a>
+                </li>
+                <!--- Temporary links below --->
+                <li class="navElm" onclick="location.href='search.html'">
+                    <a class="navText">Search</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
         <div class="main">
             <h1>Washington Street Restaurant Finder</h1>
             <form>
@@ -36,6 +62,6 @@
                 <p>Yes</p>
                 <p>No</p>
             </div>
-        </div>
+        </div> -->
     </body>
 </html> 
