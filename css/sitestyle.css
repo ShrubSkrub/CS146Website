@@ -18,6 +18,16 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* Collapse the Navigation bar and replace it with a button to reveal the Nav bar when the windows width gets too small. (Mobile mode) */ 
+@font-face {
+	font-family: roboto;
+	src: url("/includes/fonts/roboto-medium.ttf");
+}
+html {
+	background-color: #fffaf0;
+	color: #363534 ;
+	font-family: roboto;
+}
 #nav {
 	height: 100%;
 	position: fixed;
@@ -47,14 +57,20 @@ time, mark, audio, video {
 }
 
 #map {
-	width: 600px; 
+	margin-top: 15px;
+	width: 100%; 
 	height: 450px;
 }
 
+/* Need to change margin-left from 30% to a smaller number when the screen width gets too small. Needs to be implemented in Java Scripts */
 .main {
     top: 20%;
     position: absolute;
-    margin-left: 400px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.main.p {
+	margin-top: 15px;
 }
 #mainTitle {
     border-style: solid;
