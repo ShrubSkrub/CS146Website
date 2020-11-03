@@ -29,10 +29,21 @@ html {
 	font-family: roboto;
 }
 #nav {
+	display: block;
 	height: 100%;
 	position: fixed;
 	box-shadow: 2px 0px 10px rgb(0,0,0);
 	width: 200px;
+	z-index: 1;
+	background-color: #fffaf0;
+}
+
+#navButton {
+	display: none;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
 }
 td {
 	padding: 20px;
