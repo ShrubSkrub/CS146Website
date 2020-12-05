@@ -292,16 +292,22 @@ function isSpace(str){
 }
 
 function checkInJSON(str, index){
-    if (str == restaurants[index].name){
+    const name = restaurants[index].name;
+    if (str.toLowerCase() == name.toLowerCase()){
         return true;
     }
 
     for (var i = 0; i < restaurants[index].categories.length; i++){
-        if (str == restaurants[index].categories[i]){
+        const cat = restaurants[index].categories[i];
+        if (str.toLowerCase() == cat.toLowerCase()){
             return true;
         }
     }
     return false;
+}
+
+function removeDuplicates(data){
+    return data.filter((value, index) => data.indexOf(value) == index);
 }
 
 function getInput(){
@@ -317,6 +323,7 @@ function getInput(){
             }
         }
     }
+    indexArray = removeDuplicates(indexArray);
 
 
     var SearchResults = document.getElementById("SearchResults");
