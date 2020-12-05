@@ -291,13 +291,19 @@ function isSpace(str){
     return str != " ";
 }
 
+function ignoreCaseEquals(text1, text2) {
+    return text1.localeCompare(text2, undefined, { sensitivity: 'accent' }) === 0;
+}
+
 function checkInJSON(str, index){
-    if (str == restaurants[index].name){
+    //if (str == restaurants[index].name){
+    if (ignoreCaseEquals(str, restaurants[index].name)){
         return true;
     }
 
     for (var i = 0; i < restaurants[index].categories.length; i++){
-        if (str == restaurants[index].categories[i]){
+        //if (str == restaurants[index].categories[i]){
+        if (ignoreCaseEquals(str, restaurants[index].categories[i])){
             return true;
         }
     }
