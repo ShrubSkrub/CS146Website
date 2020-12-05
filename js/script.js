@@ -1,4 +1,4 @@
-restaurants = [
+var restaurants = [
     {
         "name": "O'Bagel",
         "address": "600 Washington St, Hoboken, NJ 07030",
@@ -265,7 +265,18 @@ restaurants = [
             "Cafe", "Coffee"
         ]
     }
-]
+];
+
+//Set Nav Buttons
+document.getElementById("goHome").addEventListener('click', function(){
+    window.location.href = "/index.html";
+});
+document.getElementById("goRestaurants").addEventListener('click', function(){
+    window.location.href = "/restaurant.html";
+});
+document.getElementById("goSearch").addEventListener('click', function(){
+    window.location.href = "/search.html";
+});
 
 //Returns: Array of strings
 //Purpose: Parse the individual words in the given string
@@ -273,7 +284,7 @@ restaurants = [
 function parseInput(str){
     var stringArray = str.split(/(\s+)/);
     stringArray = stringArray.filter(isSpace);
-    return stringArray
+    return stringArray;
 }
 
 function isSpace(str){
@@ -285,7 +296,7 @@ function checkInJSON(str, index){
         return true;
     }
 
-    for (let i = 0; i < restaurants[index].categories.length; i++){
+    for (var i = 0; i < restaurants[index].categories.length; i++){
         if (str == restaurants[index].categories[i]){
             return true;
         }
@@ -294,13 +305,13 @@ function checkInJSON(str, index){
 }
 
 function getInput(){
-    string = document.getElementById("SearchBar").value;
-    stringArray = parseInput(string);
+    var string = document.getElementById("SearchBar").value;
+    var stringArray = parseInput(string);
     
-    indexArray = []
-    for (let i = 0; i < stringArray.length; i++){
-        let thisString = stringArray[i];
-        for (let j = 0; j < restaurants.length; j++){
+    var indexArray = [];
+    for (var i = 0; i < stringArray.length; i++){
+        var thisString = stringArray[i];
+        for (var j = 0; j < restaurants.length; j++){
             if (checkInJSON(thisString, j)){
                 indexArray.push(j);
             }
@@ -308,14 +319,14 @@ function getInput(){
     }
 
 
-    SearchResults = document.getElementById("SearchResults");
+    var SearchResults = document.getElementById("SearchResults");
     while(SearchResults.hasChildNodes()){
         SearchResults.removeChild(SearchResults.firstChild);
     }
     
-    for (let i = 0; i < indexArray.length; i++){
-        elmName = restaurants[indexArray[i]].name;
-        elmAddress = restaurants[indexArray[i]].address;
+    for (i = 0; i < indexArray.length; i++){
+        var elmName = restaurants[indexArray[i]].name;
+        var elmAddress = restaurants[indexArray[i]].address;
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
@@ -331,14 +342,13 @@ function getInput(){
 }
 
 function loadAllRestaurants(){
-    console.log(1);
-    SearchResults = document.getElementById("SearchResults");
+    var SearchResults = document.getElementById("SearchResults");
     while(SearchResults.hasChildNodes()){
         SearchResults.removeChild(SearchResults.firstChild);
     }
-    for (let i = 0; i < restaurants.length; i++){
-        elmName = restaurants[i].name;
-        elmAddress = restaurants[i].address;
+    for (var i = 0; i < restaurants.length; i++){
+        var elmName = restaurants[i].name;
+        var elmAddress = restaurants[i].address;
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
@@ -354,8 +364,8 @@ function loadAllRestaurants(){
 }
 
 function collapseNav(){
-    navButton = document.getElementById("navButton");
-    sidebar = document.getElementById("nav");
+    var navButton = document.getElementById("navButton");
+    var sidebar = document.getElementById("nav");
 
     navButton.style.display = "block";
     sidebar.style.display = "none";
@@ -364,8 +374,8 @@ function collapseNav(){
 }
 
 function expandNav(){
-    navButton = document.getElementById("navButton");
-    sidebar = document.getElementById("nav");
+    var navButton = document.getElementById("navButton");
+    var sidebar = document.getElementById("nav");
 
     navButton.style.display = "none";
     sidebar.style.display = "block";
@@ -373,14 +383,14 @@ function expandNav(){
     expanded = true;
 }
 
-inMobile = false;
-expanded = true;
+var inMobile = false;
+var expanded = true;
 window.onresize = checkWindowState;
 
 
 function checkWindowState() {
-    main = document.getElementById("main");
-    title = document.getElementById("mainTitle");
+    var main = document.getElementById("main");
+    var title = document.getElementById("mainTitle");
     if (window.innerWidth < 900){
         inMobile = true;
         main.style.marginLeft = "5%";
@@ -402,8 +412,7 @@ function checkWindowState() {
     }
 }
 function updateNav() {
-    if (inMobile && expanded==true){
-        console.log(event.mouseX);
+    if ((inMobile===true) && (expanded===true)){
         if (event.clientX > 200){
             collapseNav();
         }
@@ -412,8 +421,8 @@ function updateNav() {
 
 window.addEventListener("click", function(){
     updateNav();
-})
+});
 
 document.addEventListener("DOMContentLoaded", function(){
     checkWindowState();
-})
+});

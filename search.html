@@ -6,7 +6,6 @@
     </head>
 
     <body>
-        <script src="/js/script.js" src="/json/restaurants.json"></script>
 
         <div class="main" id="main">
             <h1 id="mainTitle">Washington Street Restaurant Finder</h1>
@@ -29,56 +28,22 @@
                 <img src="/includes/logo.png" alt="logo" class="logo">
             </div>
             <ul id="navList">
-                <li class="navElm" onclick="location.href='index.html'">
+                <li class="navElm" id="goHome">
                     <a class="navText">Home</a>
                 </li>
-                <li class="navElm" onclick="location.href='restaurant.html'">
+                <li class="navElm" id="goRestaurants">
                     <a class="navText">Restaurants</a>
                 </li>
                 <!--- Temporary links below --->
-                <li class="navElm" onclick="location.href='search.html'">
+                <li class="navElm" id="goSearch">
                     <a class="navText">Search</a>
                 </li>
             </ul>
-
         </div>
 
         <div id="navButton">
             <img src="/includes/menubutton.png" alt="logo" class="logo" onclick="expandNav()">
         </div>
-        <!-- 
-        <div class="main">
-            <h1>Washington Street Restaurant Finder</h1>
-            <form>
-                <label for="searchLarge">Search:</label><br>
-                <input type="text">
-            </form>
-            <div class="price">
-                <h4>Price</h4>
-                <p>$</p>
-                <p>$$</p>
-                <p>$$$</p>
-                <p>$$$$</p>
-                <p>$$$$$</p>
-            </div>
-            <div class="cuisine">
-                <h4>Cuisine</h4>
-                <p>Mexican</p>
-                <p>Chinese</p>
-                <p>Italian</p>
-                <p>American</p>
-                <p>...</p>
-            </div>
-            <div class="offers">
-                <h4>Offers</h4>
-                <p>Pickup</p>
-                <p>Dine-in</p>
-            </div>
-            <div class="washwed">
-                <h4>Washington Wednesday</h4>
-                <p>Yes</p>
-                <p>No</p>
-            </div>
-        </div> -->
+        <script src="/js/script.js" src="/json/restaurants.json"></script>
     </body>
 </html> 

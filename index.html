@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="/css/sitestyle.css">
     </head>
     <body>
-        <script src="/js/script.js" src="/json/restaurants.json"></script>
         <!-- 
         <div class="main">
             <h1>Washington Street Restaurant Finder</h1>
@@ -37,14 +36,14 @@
                 <img src="/includes/logo.png" alt="logo" class="logo">
             </div>
             <ul id="navList">
-                <li class="navElm" onclick="location.href='index.html'">
+                <li class="navElm" id="goHome">
                     <a class="navText">Home</a>
                 </li>
-                <li class="navElm" onclick="location.href='restaurant.html'">
+                <li class="navElm" id="goRestaurants">
                     <a class="navText">Restaurants</a>
                 </li>
                 <!--- Temporary links below --->
-                <li class="navElm" onclick="location.href='search.html'">
+                <li class="navElm" id="goSearch">
                     <a class="navText">Search</a>
                 </li>
             </ul>
@@ -53,6 +52,7 @@
         <div id="navButton">
             <img src="/includes/menubutton.png" alt="logo" class="logo" onclick="expandNav()">
         </div>
+        <script src="/js/script.js" src="/json/restaurants.json"></script>
 
     </body>
 </html> 
