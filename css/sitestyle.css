@@ -85,16 +85,13 @@ p {
 .main {
     top: 20%;
     position: absolute;
-	margin-left: 25%;
-	margin-right: 25%;
+	
 }
 .main.p {
 	margin-top: 15px;
 }
 #mainTitle {
-    border-style: solid;
 	margin-top: 0px;
-	font-size: 2.76vw;
     font-weight: 900;
 }
 
@@ -112,4 +109,38 @@ p {
 	margin-right: auto;
 	max-width: 100%;
 	height: 100%;
+}
+
+@media only screen and (min-width: 999px){
+	#mainTitle {
+		font-size: 50px;
+	}
+
+	#main {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+}
+
+@media only screen and (max-width: 998px) and (min-width: 401px){
+	#mainTitle {
+		font-size: 40px;
+	}
+
+	#main {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+}
+
+@media only screen and (max-width: 400px){
+	#mainTitle {
+		font-size: 30px;
+	}
+
+	#main {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
