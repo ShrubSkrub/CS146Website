@@ -7,7 +7,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Jefferson’s Coffee",
+        "name": "Jefferson's Coffee",
         "address": "534 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Coffee"
@@ -21,7 +21,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Benny Tudino’s",
+        "name": "Benny Tudino's",
         "address": "622 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Pizza", "Takeout", "Cash Only"
@@ -77,7 +77,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Napoli’s Pizza",
+        "name": "Napoli's Pizza",
         "address": "1118 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Pizza", "Takeout", "Dine", "Outdoor"
@@ -98,7 +98,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Augustino’s",
+        "name": "Augustino's",
         "address": "1104 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Italian", "Takeout", "Fish", "Dine"
@@ -126,7 +126,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Amanda’s",
+        "name": "Amanda's",
         "address": "908 Washington St, Hoboken, NJ 07030",
         "categories": [
             "American", "Takeout", "Early"
@@ -147,7 +147,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Margherita’s",
+        "name": "Margherita's",
         "address": "740 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Cocktail", "Takeout", "Pizza", "Italian"
@@ -175,7 +175,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Grimaldi’s Pizzeria",
+        "name": "Grimaldi's Pizzeria",
         "address": "411 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Pizza", "Takeout", "Dine"
@@ -189,7 +189,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Mamoun’s Falafel",
+        "name": "Mamoun's Falafel",
         "address": "300 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Middle Eastern", "Takeout"
@@ -252,7 +252,7 @@ var restaurants = [
         ]
     },
     {
-        "name": "Carlo’s Bakery",
+        "name": "Carlo's Bakery",
         "address": "95 Washington St, Hoboken, NJ 07030",
         "categories": [
             "Bakery", "Takeout"
@@ -347,8 +347,8 @@ function loadAllRestaurants(){
         SearchResults.removeChild(SearchResults.firstChild);
     }
     for (var i = 0; i < restaurants.length; i++){
-        var elmName = restaurants[i].name;
-        var elmAddress = restaurants[i].address;
+        var elmName = document.createTextNode(restaurants[i].name);
+        var elmAddress = document.createTextNode(restaurants[i].address);
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
@@ -358,8 +358,8 @@ function loadAllRestaurants(){
         var cell2 = row.insertCell(1);
 
         // Add some text to the new cells:
-        cell1.innerHTML = elmName;
-        cell2.innerHTML = elmAddress;
+        cell1.appendChild(elmName);
+        cell2.appendChild(elmAddress);
     }
 }
 
