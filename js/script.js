@@ -390,18 +390,11 @@ window.onresize = checkWindowState;
 
 function checkWindowState() {
     var main = document.getElementById("main");
-    var title = document.getElementById("mainTitle");
-    if (window.innerWidth < 900){
+    if (window.innerWidth < 999){
         inMobile = true;
-        main.style.marginLeft = "5%";
-        main.style.marginRight = "5%";
-        title.style.fontSize = "25px";
     }
     else {
         inMobile = false;
-        main.style.marginLeft = "25%";
-        main.style.marginRight = "25%";
-        title.style.fontSize = "2.76vw";
     }
 
     if (inMobile){
@@ -426,3 +419,5 @@ window.addEventListener("click", function(){
 document.addEventListener("DOMContentLoaded", function(){
     checkWindowState();
 });
+
+console.log(window.innerWidth);
