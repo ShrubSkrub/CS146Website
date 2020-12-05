@@ -269,13 +269,13 @@ var restaurants = [
 
 //Set Nav Buttons
 document.getElementById("goHome").addEventListener('click', function(){
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
 });
 document.getElementById("goRestaurants").addEventListener('click', function(){
-    window.location.href = "/restaurant.html";
+    window.location.href = "./restaurant.html";
 });
 document.getElementById("goSearch").addEventListener('click', function(){
-    window.location.href = "/search.html";
+    window.location.href = "./search.html";
 });
 
 //Returns: Array of strings

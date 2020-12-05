@@ -21,7 +21,7 @@ time, mark, audio, video {
 /* Collapse the Navigation bar and replace it with a button to reveal the Nav bar when the windows width gets too small. (Mobile mode) */ 
 @font-face {
 	font-family: roboto;
-	src: url("/includes/fonts/roboto-medium.ttf");
+	src: url("../includes/fonts/roboto-medium.ttf");
 }
 html {
 	background-color: #fffaf0;
