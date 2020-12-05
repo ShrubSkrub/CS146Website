@@ -76,6 +76,11 @@ td {
 	height: 450px;
 }
 
+p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 /* Need to change margin-left from 30% to a smaller number when the screen width gets too small. Needs to be implemented in Java Scripts */
 .main {
     top: 20%;
