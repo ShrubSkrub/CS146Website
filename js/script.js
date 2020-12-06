@@ -304,8 +304,6 @@ function checkInJSON(str, index){
     for (var i = 0; i < restaurants[index].categories.length; i++){
         //if (str == restaurants[index].categories[i]){
         if (ignoreCaseEquals(str, restaurants[index].categories[i])){
-            console.log(str);
-            console.log(restaurants[index].categories[i])
             return true;
         }
     }
@@ -476,5 +474,3 @@ window.addEventListener("click", function(){
 document.addEventListener("DOMContentLoaded", function(){
     checkWindowState();
 });
-
-console.log(window.innerWidth);
