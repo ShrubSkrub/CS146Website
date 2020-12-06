@@ -336,8 +336,10 @@ function getInput(){
     }
     
     for (i = 0; i < indexArray.length; i++){
-        var elmName = restaurants[indexArray[i]].name;
-        var elmAddress = restaurants[indexArray[i]].address;
+        var priceColor = "";
+        var elmName = document.createTextNode(restaurants[i].name);
+        var elmAddress = document.createTextNode(restaurants[i].address);
+        var elmDollar = document.createTextNode(restaurants[i].categories.pop());
         var elmCategories = document.createTextNode(restaurants[i].categories.join(", "));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
@@ -347,10 +349,22 @@ function getInput(){
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
+        var div = document.createElement("p");
+        if (elmDollar.length == 1) {
+            priceColor = "green";
+        } else if (elmDollar.length == 2) {
+            priceColor = "yellow";
+        } else if (elmDollar.length == 3) {
+            priceColor = "red";
+        }
+
+        div.setAttribute("class", priceColor);
+        div.appendChild(elmDollar);
 
         // Add some text to the new cells:
-        cell1.innerHTML = elmName;
-        cell2.innerHTML = elmAddress;
+        cell1.appendChild(elmName);
+        cell2.appendChild(elmAddress);
+        cell3.appendChild(div);
         cell3.appendChild(elmCategories);
     }
 }
