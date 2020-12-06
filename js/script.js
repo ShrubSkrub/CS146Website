@@ -3,266 +3,266 @@ var restaurants = [
         "name": "O'Bagel",
         "address": "600 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Bagel"
+            "Bagel", "Takeout", "Outdoor", "$"
         ]
     },
     {
         "name": "Jefferson's Coffee",
         "address": "534 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Coffee"
+            "Coffee", "Tea", "Takeout", "Outdoor", "$$"
         ]
     },
     {
         "name": "Ayame Hibachi & Sushi",
         "address": "526 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Sushi", "Takeout"
+            "Sushi", "Japanese", "Takeout", "Outdoor", "$$"
         ]
     },
     {
         "name": "Benny Tudino's",
         "address": "622 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Pizza", "Takeout", "Cash Only"
+            "Pizza", "Takeout", "Cash Only", "Outdoor", "$"
         ]
     },
     {
         "name": "The Madison Bar & Grill",
         "address": "1316 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Bar", "Takeout", "Grill"
+            "Bar", "Takeout", "Grill", "Outdoor", "$$"
         ]
     },
     {
         "name": "Bin 14",
         "address": "1314 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Wine", "Takeout", "Bar", "Dine"
+            "Wine", "Takeout", "Bar", "Dine", "$$$"
         ]
     },
     {
         "name": "Apulia",
         "address": "1319 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Pizza", "Takeout", "Lunch", "Dine"
+            "Pizza", "Takeout", "Lunch", "$$"
         ]
     },
     {
         "name": "Stingray Lounge",
         "address": "1210 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Cocktail", "Takeout", "Bar", "Dine", "Outdoor"
+            "Cocktail", "Takeout", "Bar", "Dine", "Outdoor", "$$$"
         ]
     },
     {
         "name": "Green Garden",
         "address": "1202 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Chinese", "Takeout", "Comfort", "Dine"
+            "Chinese", "Takeout", "Delivery", "Comfort", "Dine", "$"
         ]
     },
     {
         "name": "The Brick",
         "address": "1122 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Pizza", "Takeout", "Comfort", "Dine"
+            "Pizza", "Takeout", "Comfort", "Dine", "Delivery", "$$"
         ]
     },
     {
         "name": "Yeung II",
         "address": "1120 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Chinese", "Takeout"
+            "Japanese", "Sushi", "Dine", "Takeout", "Delivery", "Outdoor", "$$"
         ]
     },
     {
         "name": "Napoli's Pizza",
         "address": "1118 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Pizza", "Takeout", "Dine", "Outdoor"
+            "Pizza", "Takeout", "Dine", "Outdoor", "$$"
         ]
     },
     {
         "name": "M & P Biancamano",
         "address": "1116 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Deli", "Takeout", "Italian"
+            "Deli", "Takeout", "Italian", "Cash only", "$"
         ]
     },
     {
         "name": "Alfalfa",
         "address": "1110 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Takeout", "Cafe", "Coffee"
+            "Takeout", "Cafe", "Coffee", "Doughnut", "Salad", "Wrap", "$$"
         ]
     },
     {
         "name": "Augustino's",
         "address": "1104 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Italian", "Takeout", "Fish", "Dine"
+            "Italian", "Takeout", "Fish", "Dine", "Outdoor", "$$$"
         ]
     },
     {
         "name": "Sirenetta Seafood & Raw Bar",
         "address": "1039 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Seafood", "Takeout", "Bar", "Dine","Fish","Raw"
+            "Seafood", "Takeout", "Bar", "Dine","Fish","Raw", "$$$"
         ]
     },
     {
         "name": "Jungle Juice 10th Street",
         "address": "1016 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Juice", "Takeout", "Acai", "Cafe"
+            "Juice", "Smoothie", "Takeout", "Acai", "Cafe", "$"
         ]
     },
     {
-        "name": "Asia Sushi & Chinese",
+        "name": "Asia Sushi & Chinese Cuisine",
         "address": "926 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Asian", "Takeout", "Sushi", "Chinese"
+            "Asian", "Takeout", "Sushi", "Chinese", "$"
         ]
     },
     {
         "name": "Amanda's",
         "address": "908 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "American", "Takeout", "Early"
+            "American", "Takeout", "Breakfast", "Delivery", "Brunch", "$$$"
         ]
     },
     {
         "name": "Bagels On the Hudson",
         "address": "802 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Breakfast", "Takeout", "Bagel"
+            "Breakfast", "Takeout", "Bagel", "$"
         ]
     },
     {
         "name": "8th Street Taven",
         "address": "800 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Grill", "Takeout", "Bar"
+            "Grill", "Takeout", "Bar", "American", "$"
         ]
     },
     {
         "name": "Margherita's",
         "address": "740 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Cocktail", "Takeout", "Pizza", "Italian"
+            "Cocktail", "Dine", "Takeout", "Pizza", "Italian", "Seafood", "Pasta", "$$"
         ]
     },
     {
         "name": "Pita Pit",
         "address": "732 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Sandwich", "Takeout", "Deli"
+            "Sandwich", "Takeout", "Deli", "Mediterranean", "$"
         ]
     },
     {
         "name": "Hoboken Hot Bagels",
         "address": "634 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Bagel", "Takeout"
+            "Bagel", "Takeout", "Breakfast", "$"
         ]
     },
     {
         "name": "Kung Fu Tea",
         "address": "536 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Tea", "Coffee", "Cafe"
+            "Tea", "Coffee", "Cafe", "Takeout", "$"
         ]
     },
     {
         "name": "Grimaldi's Pizzeria",
         "address": "411 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Pizza", "Takeout", "Dine"
+            "Pizza", "Takeout", "Delivery", "$$"
         ]
     },
     {
         "name": "The Cuban",
         "address": "333 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Cuban", "Bar", "Comfort"
+            "Cuban", "Bar", "Comfort", "Dine", "Delivery", "$$$"
         ]
     },
     {
         "name": "Mamoun's Falafel",
         "address": "300 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Middle Eastern", "Takeout"
+            "Middle Eastern", "Takeout", "$"
         ]
     },
     {
         "name": "Tally-Ho",
-        "address": "526 Washington St, Hoboken, NJ 07030",
+        "address": "215 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Bar", "Takeout", "Comfort"
+            "Bar", "Takeout", "Comfort", "$$"
         ]
     },
     {
         "name": "La Bouche",
-        "address": "526 Washington St, Hoboken, NJ 07030",
+        "address": "207 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Breakfast", "Takeout", "Brunch", "Coffee"
+            "Breakfast", "Takeout", "Delivery", "Brunch", "Coffee", "$$"
         ]
     },
     {
         "name": "The Brass Rail",
         "address": "135 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Bar", "Takeout", "American", "Dine"
+            "Bar", "Takeout", "Delivery", "American", "Outdoor", "Dine", "$$"
         ]
     },
     {
         "name": "honeygrow",
         "address": "120 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Salads", "Light", "Healthy", "Locally Sourced"
+            "Salad", "Light", "Healthy", "Locally Sourced", "$$"
         ]
     },
     {
         "name": "Johnny Rockets",
         "address": "134 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Retro", "Takeout", "American", "Dine"
+            "Retro", "Takeout", "American", "Dine", "$$"
         ]
     },
     {
         "name": "Cluck U Chicken",
         "address": "112 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Chicken", "Fast Food"
+            "Chicken", "Fast Food", "Takeout", "Delivery", "$"
         ]
     },
     {
         "name": "Empanadas Cafe",
         "address": "123 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Cafe", "South American", "Coffee"
+            "South American", "Takeout", "$"
         ]
     },
     {
         "name": "La Isla",
         "address": "104 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Cuban", "Comfort", "BYOB"
+            "Cuban", "Comfort", "BYOB", "Outdoor", "Takeout", "Delivery", "$$"
         ]
     },
     {
         "name": "Carlo's Bakery",
         "address": "95 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Bakery", "Takeout"
+            "Bakery", "Takeout", "Desserts", "Delivery", "$$"
         ]
     },
     {
         "name": "Bluestone Lane",
         "address": "409 Washington St, Hoboken, NJ 07030",
         "categories": [
-            "Cafe", "Coffee"
+            "Cafe", "Coffee", "Tea", "Breakfast", "Brunch","Outdoor", "Delivery", "Takeout", "$$"
         ]
     }
 ];
