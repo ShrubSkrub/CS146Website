@@ -363,6 +363,7 @@ function loadAllRestaurants(){
     for (var i = 0; i < restaurants.length; i++){
         var elmName = document.createTextNode(restaurants[i].name);
         var elmAddress = document.createTextNode(restaurants[i].address);
+        var elmDollar = document.createTextNode(restaurants[i].categories.pop());
         var elmCategories = document.createTextNode(restaurants[i].categories.join(", "));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
@@ -372,10 +373,14 @@ function loadAllRestaurants(){
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
+        var div = document.createElement("p");
+        div.setAttribute("class", "red");
+        div.appendChild(elmDollar);
 
         // Add some text to the new cells:
         cell1.appendChild(elmName);
         cell2.appendChild(elmAddress);
+        cell3.appendChild(div);
         cell3.appendChild(elmCategories);
     }
 }
