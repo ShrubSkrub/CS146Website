@@ -314,6 +314,14 @@ function removeDuplicates(data){
     return data.filter((value, index) => data.indexOf(value) == index);
 }
 
+function removeLast(array){
+    var res = [];
+    for (var i = 0; i < array.length-1; i++){
+        res.push(array[i]);
+    }
+    return res;
+}
+
 function getInput(){
     var string = document.getElementById("SearchBar").value;
     var stringArray = parseInput(string);
@@ -339,8 +347,10 @@ function getInput(){
         var priceColor = "";
         var elmName = document.createTextNode(restaurants[i].name);
         var elmAddress = document.createTextNode(restaurants[i].address);
-        var elmDollar = document.createTextNode(restaurants[i].categories.pop());
-        var elmCategories = document.createTextNode(restaurants[i].categories.join(", "));
+
+        const cats = restaurants[i].categories;
+        var elmDollar = document.createTextNode(cats[cats.length-1]);
+        var elmCategories = document.createTextNode(removeLast(restaurants[i].categories).join(", "));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
