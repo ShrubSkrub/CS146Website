@@ -304,6 +304,8 @@ function checkInJSON(str, index){
     for (var i = 0; i < restaurants[index].categories.length; i++){
         //if (str == restaurants[index].categories[i]){
         if (ignoreCaseEquals(str, restaurants[index].categories[i])){
+            console.log(str);
+            console.log(restaurants[index].categories[i])
             return true;
         }
     }
@@ -345,12 +347,12 @@ function getInput(){
     
     for (i = 0; i < indexArray.length; i++){
         var priceColor = "";
-        var elmName = document.createTextNode(restaurants[i].name);
-        var elmAddress = document.createTextNode(restaurants[i].address);
+        var elmName = document.createTextNode(restaurants[indexArray[i]].name);
+        var elmAddress = document.createTextNode(restaurants[indexArray[i]].address);
 
-        const cats = restaurants[i].categories;
+        const cats = restaurants[indexArray[i]].categories;
         var elmDollar = document.createTextNode(cats[cats.length-1]);
-        var elmCategories = document.createTextNode(removeLast(restaurants[i].categories).join(", "));
+        var elmCategories = document.createTextNode(removeLast(restaurants[indexArray[i]].categories).join(", "));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
