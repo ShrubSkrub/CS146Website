@@ -338,6 +338,7 @@ function getInput(){
     for (i = 0; i < indexArray.length; i++){
         var elmName = restaurants[indexArray[i]].name;
         var elmAddress = restaurants[indexArray[i]].address;
+        var elmCategories = document.createTextNode(restaurants[i].categories.join(", "));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
@@ -345,10 +346,12 @@ function getInput(){
         // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
 
         // Add some text to the new cells:
         cell1.innerHTML = elmName;
         cell2.innerHTML = elmAddress;
+        cell3.appendChild(elmCategories);
     }
 }
 
@@ -360,6 +363,7 @@ function loadAllRestaurants(){
     for (var i = 0; i < restaurants.length; i++){
         var elmName = document.createTextNode(restaurants[i].name);
         var elmAddress = document.createTextNode(restaurants[i].address);
+        var elmCategories = document.createTextNode(restaurants[i].categories.join(", "));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
         var row = SearchResults.insertRow(0);
@@ -367,10 +371,12 @@ function loadAllRestaurants(){
         // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
 
         // Add some text to the new cells:
         cell1.appendChild(elmName);
         cell2.appendChild(elmAddress);
+        cell3.appendChild(elmCategories);
     }
 }
 
