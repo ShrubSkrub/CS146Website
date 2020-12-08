@@ -84,7 +84,11 @@ p {
     font-weight: 900;
 }
 
-#Search 
+#contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
 
 #SearchButton {
 	margin-top: 20px;
